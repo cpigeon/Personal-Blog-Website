@@ -1,6 +1,14 @@
 .container{
   display: grid;
   border: 2px solid blue;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 250px 50px 350px 350px 75px;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd"
+  "nb nb nb nb nb nb nb nb"
+  "main main main main main main abt abt"
+  "feat feat feat feat feat feat abt abt"
+  "ft ft ft ft ft ft ft ft";
 }
 
 .box{
@@ -8,25 +16,26 @@
 }
 
 .header{
-
+  grid-area: hd;
 }
 
 .nav{
-
+  grid-area: nb;
 }
 
 .post{
+  grid-area: main;
 
 }
 
 .feat{
-
+  grid-area: feat;
 }
 
 .about{
-
+  grid-area: abt;
 }
 
 .footer{
-  
+  grid-area: ft;
 }
