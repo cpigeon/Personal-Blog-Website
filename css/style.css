@@ -2,7 +2,7 @@
   display: grid;
   border: 2px solid blue;
   grid-template-columns: 300px 300px;
-  grid-template-rows: 250px 50px 350px 350px 75px;
+  grid-template-rows: 400px 50px 500px 500px 75px;
   grid-template-areas:
   "hd hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb nb"
@@ -16,7 +16,21 @@
 }
 
 .header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-area: hd;
+  background-image: url("../images/IMG_1447.jpeg");
+  opacity: 0.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1{
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px black;
+  font-size: 82px;
+  color: #F5F5F5;
 }
 
 .nav{
