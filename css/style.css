@@ -1,0 +1,32 @@
+.container{
+  display: grid;
+  border: 2px solid blue;
+}
+
+.box{
+  border: 2px solid red;
+}
+
+.header{
+
+}
+
+.nav{
+
+}
+
+.post{
+
+}
+
+.feat{
+
+}
+
+.about{
+
+}
+
+.footer{
+  
+}
