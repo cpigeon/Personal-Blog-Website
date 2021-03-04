@@ -42,10 +42,11 @@ h1{
   align-items: center;
 }
 
-.nav-text{
+.nav-link{
   font-family: 'Oswald', sans-serif;
   color: #F5F5F5;
-  font-size: 18px; 
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .post{
