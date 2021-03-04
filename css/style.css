@@ -35,6 +35,17 @@ h1{
 
 .nav{
   grid-area: nb;
+  background-color: #19334d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-text{
+  font-family: 'Oswald', sans-serif;
+  color: #F5F5F5;
+  font-size: 18px; 
 }
 
 .post{
