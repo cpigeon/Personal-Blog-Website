@@ -68,35 +68,39 @@ h2{
   grid-auto-rows: 380px;
   grid-gap: 30px;
   justify-content: center;
+  align-items: center;
+  padding-left: 40px;
 }
 
-.post-pic{
+.card{
+  box-shadow: 5px 10px 8px #888888;
+  max-width: 300px;
+}
+
+.post-img{
   border-radius: 5px;
+  height: 340px;
 }
 
-#yosemite{
-  background-image: url("../images/IMG_1493crop.JPG");
-  background-size: cover;
+button {
+  border: 2px solid grey;
+  padding: 5px;
+  background-color: white;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
 }
 
-#northLake{
-  background-image: url("../images/IMG_1749crop.jpeg");
-  background-size: cover;
-  justify-content: center;
+button:hover {
+  opacity: 0.7;
 }
 
-#hungryPacker{
-  background-image: url("../images/IMG_0242.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.post-text{
+.post-link{
   font-family: 'Oswald', sans-serif;
-  font-size: 24px;
-  color: #F5F5F5;
+  font-size: 18px;
+  color: black;
   font-weight: 600;
-  padding: 5px 10px;
+  text-decoration: none;
 }
 
 .feat{
