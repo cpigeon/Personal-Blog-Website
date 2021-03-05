@@ -2,13 +2,13 @@
   display: grid;
   border: 2px solid blue;
   grid-template-columns: 300px 300px;
-  grid-template-rows: 400px 50px 500px 500px 75px;
+  grid-template-rows: 400px 50px 550px 550px 75px;
   grid-template-areas:
-  "hd hd hd hd hd hd hd hd"
-  "nb nb nb nb nb nb nb nb"
-  "main main main main main main abt abt"
-  "feat feat feat feat feat feat abt abt"
-  "ft ft ft ft ft ft ft ft";
+  "hd hd hd hd hd hd hd"
+  "nb nb nb nb nb nb nb"
+  "main main main main main abt abt"
+  "feat feat feat feat feat abt abt"
+  "ft ft ft ft ft ft ft";
 }
 
 .box{
@@ -51,7 +51,52 @@ h1{
 
 .post{
   grid-area: main;
+}
 
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 38px;
+  font-weight: 900;
+  text-shadow: 1px 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.nestedGrid-Post{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-auto-rows: 380px;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.post-pic{
+  border-radius: 5px;
+}
+
+#yosemite{
+  background-image: url("../images/IMG_1493crop.JPG");
+  background-size: cover;
+}
+
+#northLake{
+  background-image: url("../images/IMG_1749crop.jpeg");
+  background-size: cover;
+  justify-content: center;
+}
+
+#hungryPacker{
+  background-image: url("../images/IMG_0242.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.post-text{
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  color: #F5F5F5;
+  font-weight: 600;
+  padding: 5px 10px;
 }
 
 .feat{
