@@ -2,7 +2,7 @@
   display: grid;
   border: 2px solid blue;
   grid-template-columns: 300px 300px;
-  grid-template-rows: 400px 50px 550px 580px 75px;
+  grid-template-rows: 400px 50px 550px 580px 50px;
   grid-template-areas:
   "hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb"
@@ -168,4 +168,49 @@ button:hover {
 
 .footer{
   grid-area: ft;
+  background-color: #19334d;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ftr-right{
+  padding-left: 10px;
+}
+
+.ftr-left{
+  padding-right: 10px;  
+}
+
+.ftr-link{
+  font-family: 'Oswald', sans-serif;
+  color: #F5F5F5;
+  font-size: 18px;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 15px;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
 }
