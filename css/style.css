@@ -3,7 +3,7 @@
   display: grid;
   /* border: 2px solid blue; */
   grid-template-columns: 300px 300px;
-  grid-template-rows: 400px 50px 550px 580px 50px;
+  grid-template-rows: 400px 50px 500px 530px 50px;
   grid-template-areas:
   "hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb"
@@ -22,7 +22,6 @@
   align-items: center;
   grid-area: hd;
   background-image: url("../images/IMG_1447.jpeg");
-  opacity: 0.6;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,13 +30,12 @@ h1{
   /* font-family: 'Open Sans Condensed', sans-serif; */
   text-shadow: 2px 2px black;
   font-size: 82px;
-  color: #F5F5F5;
+  color: white;
 }
 
 .nav{
   grid-area: nb;
-  background-color: #19334d;
-  /* background-color: rgba(25, 51, 77, 0.7); */
+  background-color: rgba(25, 51, 77, 0.8);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -173,7 +171,7 @@ button:hover {
 
 .footer{
   grid-area: ft;
-  background-color: #19334d;
+  background-color: rgba(25, 51, 77, 0.8);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
