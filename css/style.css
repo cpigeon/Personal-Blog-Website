@@ -1,6 +1,6 @@
 .container{
   display: grid;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   grid-template-columns: 300px 300px;
   grid-template-rows: 400px 50px 550px 580px 50px;
   grid-template-areas:
@@ -12,7 +12,7 @@
 }
 
 .box{
-  border: 2px solid red;
+  /* border: 1px solid grey; */
 }
 
 .header{
@@ -27,7 +27,7 @@
 }
 
 h1{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-shadow: 2px 2px black;
   font-size: 82px;
   color: #F5F5F5;
@@ -43,7 +43,7 @@ h1{
 }
 
 .nav-link{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #F5F5F5;
   font-size: 18px;
   text-decoration: none;
@@ -54,9 +54,9 @@ h1{
 }
 
 h2{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 42px;
-  font-weight: 900;
+  font-weight: 100;
   text-shadow: 1px 1px;
   display: flex;
   justify-content: center;
@@ -83,10 +83,10 @@ h2{
 }
 
 button {
-  border: 2px solid grey;
+  border: 2px solid white;
   padding: 5px;
   background-color: white;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   width: 100%;
 }
@@ -96,7 +96,7 @@ button:hover {
 }
 
 .post-link{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
   color: black;
   font-weight: 600;
@@ -108,7 +108,7 @@ button:hover {
 }
 
 .feat-h2{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 42px;
   font-weight: 900;
   text-shadow: 1px 1px;
@@ -118,7 +118,7 @@ button:hover {
 }
 
 .feat-text{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 24px;
   color: black;
   display: flex;
@@ -128,7 +128,7 @@ button:hover {
 }
 
 .feat-link{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   color: black;
   font-weight: 600;
@@ -140,7 +140,7 @@ button:hover {
 }
 
 .about-h2{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
   font-weight: 900;
   display: flex;
@@ -157,7 +157,7 @@ button:hover {
 
 .about-text{
   width: 250px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 16px;
   margin: auto;
 }
@@ -180,11 +180,11 @@ button:hover {
 }
 
 .ftr-left{
-  padding-right: 10px;  
+  padding-right: 10px;
 }
 
 .ftr-link{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   color: #F5F5F5;
   font-size: 18px;
   text-decoration: none;
@@ -192,7 +192,7 @@ button:hover {
 }
 
 .fa {
-  padding: 8px;
+  padding: 5px;
   font-size: 30px;
   width: 15px;
   text-decoration: none;
