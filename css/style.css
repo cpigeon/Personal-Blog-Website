@@ -3,7 +3,7 @@
   display: grid;
   /* border: 2px solid blue; */
   grid-template-columns: 300px 300px;
-  grid-template-rows: 400px 50px 500px 530px 50px;
+  grid-template-rows: 400px 50px 500px 550px 50px;
   grid-template-areas:
   "hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb"
