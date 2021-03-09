@@ -108,6 +108,10 @@ h2{
   position: relative;
 }
 
+.about-img{
+  width: 100%;
+}
+
 
 .footer{
   grid-area: ft;
