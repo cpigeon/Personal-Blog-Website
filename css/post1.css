@@ -2,12 +2,13 @@
 @import "./nav.css";
 @import "./footer.css";
 
-body{
+body {
   font-size: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.container{
+/* Setup grid layout for page */
+.container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 400px 50px 1fr 50px;
@@ -18,25 +19,16 @@ body{
   "ft ft ft ft ft ft ft";
 }
 
-.box{
-}
-
-.post{
+/* Post */
+.post {
   grid-area: main;
   padding: 20px 40px;
 }
 
-.post-img{
+/* Style Post Images */
+.post-img {
   height: 600px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.feat{
-  grid-area: feat;
-}
-
-.about{
-  grid-area: abt;
 }
