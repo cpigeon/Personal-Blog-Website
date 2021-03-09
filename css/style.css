@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 300px 300px;
-  grid-template-rows: 400px 50px 500px 550px 50px;
+  grid-template-rows: 400px 50px 1fr 1fr 50px;
   grid-template-areas:
   "hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb"
@@ -141,4 +141,27 @@ body {
 /* Style link in About Me section */
 .about-link {
   color: black;
+}
+
+/* Style updates with a max screen size of 900px */
+@media (max-width:900px) {
+  .nestedGrid-Card {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .about {
+    margin-right: 50px;
+  }
+}
+
+/* Style updates with a screen size of 901px - 1200px */
+@media (min-width: 901px) and (max-width:1200px) {
+  .nestedGrid-Card {
+    grid-template-columns: 300px 300px;
+  }
 }
