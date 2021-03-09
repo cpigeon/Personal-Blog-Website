@@ -1,7 +1,10 @@
-.container{
+body {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Setup grid layout for page */
+.container {
   display: grid;
-  /* border: 2px solid blue; */
   grid-template-columns: 300px 300px;
   grid-template-rows: 400px 50px 500px 550px 50px;
   grid-template-areas:
@@ -12,44 +15,45 @@
   "ft ft ft ft ft ft ft";
 }
 
-.box{
-  /* border: 1px solid grey; */
-}
-
-.header{
+/* Header */
+/* Setup flexbox layout for header */
+.header {
+  grid-area: hd;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: hd;
   background-image: url("../images/IMG_1447.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-h1{
-  /* font-family: 'Open Sans Condensed', sans-serif; */
+/* Style header text */
+.header-h1 {
   text-shadow: 2px 2px black;
   font-size: 82px;
   color: white;
 }
 
-.nav{
+/* Navigation Bar */
+/* Setup flexbox layout for nav bar */
+.nav {
   grid-area: nb;
-  background-color: rgba(25, 51, 77, 0.8);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  background-color: rgba(25, 51, 77, 0.8);
 }
 
-.nav-link{
-  /* font-family: 'Open Sans Condensed', sans-serif; */
-  color: #F5F5F5;
+/* Style nav bar link text */
+.nav-link {
+  color: #f5f5f5;
   font-size: 18px;
   text-decoration: none;
 }
 
-.dropbtn{
+/* Style button for dropdown menu for Posts and Tips & Resources Sections in the Nav Bar */
+.dropbtn {
   background-color: inherit;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
@@ -59,43 +63,52 @@ h1{
   cursor: pointer;
 }
 
-.dropdown-content{
+/* Style dropdown content boxes */
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: rgba(25, 51, 77, 0.8);
   min-width: 160px;
 }
 
+/* Style dropdown links*/
 .dropdown-content a {
-  color: white;
+  color: #f5f5f5;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: rgba(25, 51, 77, 0.5);}
+.dropdown-content a:hover {
+  background-color: rgba(25, 51, 77, 0.5);
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgba(25, 51, 77, 0.8);}
+.dropdown:hover .dropbtn {
+  background-color: rgba(25, 51, 77, 0.8);
+}
 
-.post{
+/* Post */
+.post {
   grid-area: main;
 }
 
-h2{
-  /* font-family: 'Open Sans Condensed', sans-serif; */
-  font-size: 42px;
-  font-weight: 200;
-  /* text-shadow: 1px 1px; */
+/* Setup flexbox layout for Post Section */
+.post-h2 {
   display: flex;
   justify-content: center;
+  font-size: 42px;
+  font-weight: 200;
 }
 
-.nestedGrid-Post{
+/* Setup Nested Grid for Cards */
+.nestedGrid-Card {
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-auto-rows: 380px;
@@ -105,26 +118,27 @@ h2{
   padding-left: 40px;
 }
 
-.card{
-  /* box-shadow: 5px 10px 8px #888888; */
+/* Style cards */
+.card {
   max-width: 300px;
   display: inline-block;
   position: relative;
 }
 
-.post-feat-img{
+/* Style Card Image */
+.card-img {
   border-radius: 5px;
   height: 340px;
   width: 100%
 }
 
-.postbtn {
+/* Style Card Button */
+.cardbtn {
   position: absolute;
   bottom: 5px;
   left: 1px;
   border: transparent;
   padding: 5px;
-  /* background-color: white; */
   background: rgba(25, 51, 77, 0.5);
   text-align: left;
   cursor: pointer;
@@ -132,11 +146,13 @@ h2{
   height: 75px;
 }
 
-.postbtn:hover {
+/* Change opacity of button on hover */
+.cardbtn:hover {
   opacity: 0.7;
 }
 
-.post-link{
+/* Style link on cards/buttons */
+.card-link {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   color: white;
@@ -144,109 +160,103 @@ h2{
   text-decoration: none;
 }
 
-.feat{
+/* Tips & Resources */
+.feat {
   grid-area: feat;
 }
 
-.feat-h2{
-  font-size: 42px;
-  font-weight: 200;
-  /* text-shadow: 1px 1px; */
+/* Setup flexbox for Tips & Resources heading */
+.feat-h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 5px;
+  font-size: 42px;
+  font-weight: 200;
 }
 
-.feat-text{
-  font-size: 24px;
-  color: black;
+/* Setup flexbox for Tips & Resources text */
+.feat-text {
   display: flex;
   justify-content: center;
   margin-top: 5px;
   margin-bottom: 20px;
+  font-size: 24px;
+  color: black;
 }
 
-.feat-link{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.about{
+/* About Me Section */
+.about {
   grid-area: abt;
 }
 
-.about-h2{
-  font-size: 30px;
-  font-weight: 900x;
+/* Setup flexbox for About Me heading */
+.about-h2 {
   display: flex;
   justify-content: center;
+  font-size: 30px;
+  font-weight: 200;
 }
 
-.about-img{
-  border-radius: 50%;
-  height: 300px;
+/* Style About Me images */
+.about-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+  height: 300px;
 }
 
-.about-text{
+/* Style About Me text paragraphs */
+.about-text {
   width: 250px;
   font-size: 16px;
   margin: auto;
 }
 
-.about-link{
+/* Style link in About Me section */
+.about-link {
   color: black;
 }
 
-.footer{
+/* Footer */
+/* Setup flexbox for Footer */
+.footer {
   grid-area: ft;
-  background-color: rgba(25, 51, 77, 0.8);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(25, 51, 77, 0.8);
 }
 
-.ftr-right{
+/* Break Footer up into two pieces - a 'right' and a 'left' */
+.ftr-right {
   padding-left: 10px;
 }
 
-.ftr-left{
+.ftr-left {
   padding-right: 10px;
 }
 
-.ftr-link{
-  color: #F5F5F5;
+/* Style Footer links */
+.ftr-link {
+  color: #f5f5f5;
   font-size: 18px;
   text-decoration: none;
   padding-left: 15px;
 }
 
+/* Style Social Media Buttons */
 .fa {
   padding: 5px;
   font-size: 30px;
   width: 15px;
   text-decoration: none;
   margin: 5px 2px;
+  color: white;
 }
 
+/* Change Social Media Button opacity upon hover */
 .fa:hover {
     opacity: 0.7;
-}
-
-.fa-facebook {
-  color: white;
-}
-
-.fa-twitter {
-  color: white;
-}
-
-.fa-instagram {
-  color: white;
 }
