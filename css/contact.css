@@ -2,10 +2,13 @@
 @import "./nav.css";
 @import "./footer.css";
 
-.container{
+body {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Setup grid layout for page */
+.container {
   display: grid;
-  /* border: 2px solid blue; */
   grid-template-columns: 1fr;
   grid-template-rows: 400px 50px 1fr 50px;
   grid-template-areas:
@@ -15,24 +18,24 @@
   "ft ft ft ft ft ft ft";
 }
 
-.box{
-  /* border: 1px solid red; */
-}
-
-.contact{
+/* Contact Me */
+.contact {
   grid-area: main;
   padding: 18px 18px;
 }
 
-h2{
+/* Style Contact Me heading */
+.contact-h2 {
   font-size: 42px;
   font-weight: 200;
 }
 
-.contact-intro{
+/* Style Contact Me text */
+.contact-text {
   font-size: 24px;
 }
 
+/* Setup Contact Me form */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -46,6 +49,7 @@ input[type=text], select, textarea {
   font-size: 18px;
 }
 
+/* Style Submit button */
 input[type=submit] {
   background-color: rgba(25, 51, 77, 0.8);
   color: white;
@@ -55,6 +59,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
+/* Change color of submit button upon hover */
 input[type=submit]:hover {
   background-color: rgba(25, 51, 77);
 }
