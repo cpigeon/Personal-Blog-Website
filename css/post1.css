@@ -1,9 +1,12 @@
-.container{
+body{
+  font-size: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container{
   display: grid;
-  border: 2px solid blue;
   grid-template-columns: 1fr;
-  grid-template-rows: 400px 50px 500px 50px;
+  grid-template-rows: 400px 50px 1fr 50px;
   grid-template-areas:
   "hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb"
@@ -12,7 +15,6 @@
 }
 
 .box{
-  border: 1px solid red;
 }
 
 .header{
@@ -25,8 +27,7 @@
   background-repeat: no-repeat;
 }
 
-h1{
-  /* font-family: 'Open Sans Condensed', sans-serif; */
+.h1-header{
   text-shadow: 2px 2px black;
   font-size: 82px;
   color: white;
@@ -50,8 +51,15 @@ h1{
 
 .post{
   grid-area: main;
+  padding: 20px 40px;
 }
 
+.post-img{
+  height: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
 
 .feat{
   grid-area: feat;
