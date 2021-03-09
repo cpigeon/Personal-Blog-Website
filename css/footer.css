@@ -1,0 +1,42 @@
+/* Footer */
+/* Setup flexbox for Footer */
+.footer {
+  grid-area: ft;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(25, 51, 77, 0.8);
+}
+
+/* Break Footer up into two pieces - a 'right' and a 'left' */
+.ftr-right {
+  padding-left: 10px;
+}
+
+.ftr-left {
+  padding-right: 10px;
+}
+
+/* Style Footer links */
+.ftr-link {
+  color: #f5f5f5;
+  font-size: 18px;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+/* Style Social Media Buttons */
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 15px;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: white;
+}
+
+/* Change Social Media Button opacity upon hover */
+.fa:hover {
+    opacity: 0.7;
+}

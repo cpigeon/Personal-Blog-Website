@@ -1,0 +1,18 @@
+/* Header */
+/* Setup flexbox layout for header */
+.header {
+  grid-area: hd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/IMG_1447.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Style header text */
+.header-h1 {
+  text-shadow: 2px 2px black;
+  font-size: 82px;
+  color: white;
+}

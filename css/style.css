@@ -1,3 +1,7 @@
+@import "./header.css";
+@import "./nav.css";
+@import "./footer.css";
+
 body {
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -13,85 +17,6 @@ body {
   "main main main main main abt abt"
   "feat feat feat feat feat abt abt"
   "ft ft ft ft ft ft ft";
-}
-
-/* Header */
-/* Setup flexbox layout for header */
-.header {
-  grid-area: hd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images/IMG_1447.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* Style header text */
-.header-h1 {
-  text-shadow: 2px 2px black;
-  font-size: 82px;
-  color: white;
-}
-
-/* Navigation Bar */
-/* Setup flexbox layout for nav bar */
-.nav {
-  grid-area: nb;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgba(25, 51, 77, 0.8);
-}
-
-/* Style nav bar link text */
-.nav-link {
-  color: #f5f5f5;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-/* Style button for dropdown menu for Posts and Tips & Resources Sections in the Nav Bar */
-.dropbtn {
-  background-color: inherit;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 18px;
-  border: transparent;
-  color: white;
-  padding: 13px 13px;
-  cursor: pointer;
-}
-
-/* Style dropdown content boxes */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(25, 51, 77, 0.8);
-  min-width: 160px;
-}
-
-/* Style dropdown links*/
-.dropdown-content a {
-  color: #f5f5f5;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: rgba(25, 51, 77, 0.5);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: rgba(25, 51, 77, 0.8);
 }
 
 /* Post */
@@ -216,47 +141,4 @@ body {
 /* Style link in About Me section */
 .about-link {
   color: black;
-}
-
-/* Footer */
-/* Setup flexbox for Footer */
-.footer {
-  grid-area: ft;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(25, 51, 77, 0.8);
-}
-
-/* Break Footer up into two pieces - a 'right' and a 'left' */
-.ftr-right {
-  padding-left: 10px;
-}
-
-.ftr-left {
-  padding-right: 10px;
-}
-
-/* Style Footer links */
-.ftr-link {
-  color: #f5f5f5;
-  font-size: 18px;
-  text-decoration: none;
-  padding-left: 15px;
-}
-
-/* Style Social Media Buttons */
-.fa {
-  padding: 5px;
-  font-size: 30px;
-  width: 15px;
-  text-decoration: none;
-  margin: 5px 2px;
-  color: white;
-}
-
-/* Change Social Media Button opacity upon hover */
-.fa:hover {
-    opacity: 0.7;
 }
