@@ -2,8 +2,8 @@
   font-family: 'Open Sans Condensed', sans-serif;
   display: grid;
   /* border: 2px solid blue; */
-  grid-template-columns: 600px;
-  grid-template-rows: 400px 50px 680px 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 50px 1fr 50px;
   grid-template-areas:
   "hd hd hd hd hd hd hd"
   "nb nb nb nb nb nb nb"
@@ -48,8 +48,42 @@ h1{
   text-decoration: none;
 }
 
+.dropbtn{
+  background-color: inherit;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
+  border: transparent;
+  color: white;
+  padding: 13px 13px;
+  cursor: pointer;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgba(25, 51, 77, 0.8);
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgba(25, 51, 77, 0.5);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgba(25, 51, 77, 0.8);}
+
 .contact{
-  padding-left: 18px;
+  grid-area: main;
+  padding: 18px 18px;
 }
 
 h2{
@@ -62,7 +96,7 @@ h2{
 }
 
 input[type=text], select, textarea {
-  width: 200%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -71,7 +105,7 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 input[type=submit] {
