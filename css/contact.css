@@ -109,7 +109,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: rgba(25, 51, 77);
+  background-color: rgba(25, 51, 77, 0.8);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -118,7 +118,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: rgba(25, 51, 77, 0.8);
+  background-color: rgba(25, 51, 77);
 }
 
 .footer{
