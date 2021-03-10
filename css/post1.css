@@ -31,6 +31,13 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 1px #cccccc solid;
+}
+
+.post-img-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
 }
 
 /* Style updates with a screen size of less than 850px */
