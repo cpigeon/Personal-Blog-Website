@@ -1,0 +1,42 @@
+@import "./header.css";
+@import "./nav.css";
+@import "./footer.css";
+
+body {
+  font-size: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* Setup grid layout for page */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px 50px 600px 50px;
+  grid-template-areas:
+  "hd hd hd hd hd hd hd"
+  "nb nb nb nb nb nb nb"
+  "main main main main main main main"
+  "ft ft ft ft ft ft ft";
+}
+
+/* Post */
+.post {
+  grid-area: main;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style post-text */
+.post-text{
+  font-weight: 200;
+  text-align: center;
+}
+
+/* Style updates with a screen size of less than 1200px */
+@media (max-width:1200px) {
+  .container {
+    grid-template-columns: 300px 300px;
+  }
+}
