@@ -143,14 +143,12 @@ body {
   color: black;
 }
 
-/* Style updates with a max screen size of 900px */
-@media (max-width:900px) {
+@media (max-width: 900px) {
   .nestedGrid-Card {
     grid-template-columns: 1fr;
   }
 
   .card {
-    max-width: 300px;
     margin: auto;
   }
 
@@ -159,9 +157,18 @@ body {
   }
 }
 
-/* Style updates with a screen size of 901px - 1200px */
-@media (min-width: 901px) and (max-width:1200px) {
+@media (min-width: 901px) and (max-width: 1200px) {
   .nestedGrid-Card {
     grid-template-columns: 300px 300px;
+  }
+
+  .about {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .nestedGrid-Card {
+    grid-template-columns: 30% 30% 30%;
   }
 }
