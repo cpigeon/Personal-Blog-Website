@@ -63,3 +63,10 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: rgba(25, 51, 77);
 }
+
+/* Style updates with a max screen size of 600px */
+@media (max-width:600px) {
+  .container {
+    grid-template-columns: 300px 300px;
+  }
+}
